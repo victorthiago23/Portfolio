@@ -1,0 +1,130 @@
+/*CABEÇALHO*/
+.container__nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    top: 0;
+}
+
+.nav__tipos {
+    display: flex;
+    gap: 20px;
+}
+
+/*SESSÃO*/
+.sessao__eu__container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: left;
+}
+
+.sessao__eu__container img {
+    max-width: 100%;   /* Limita a largura máxima da imagem ao tamanho do contêiner */
+    height: 90%;      /* Ajusta a altura automaticamente para manter a proporção */
+}
+
+.sessao__eu__container p {
+    width: 75%;
+}
+
+.itens__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.itens__a {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+/*SOBRE MIM*/
+
+.sobre__container {
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+
+
+/*SKILLS*/
+
+.skills__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.icons__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 150px;
+}
+
+/*FORMAÇÕES*/
+
+.formacao__container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.formacao__container img {
+    width: 100%;
+}
+
+/*EXPERIÊNCIAS*/
+
+.experiencia__container img{
+    border-radius: 0%;
+    width: 100%;
+}
+
+.experiencia__container .icons__container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 864px) {
+
+    /*CABEÇALHO*/
+    .nav__tipos a{
+        display: none;
+    }
+
+    /*SOBRE*/
+.sobre__container {
+    padding-left: 0;
+}
+
+}
+
+@media (max-width: 700px) {
+
+    /*SESSÃO*/
+.sessao__eu__container {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}   
+
+.sessao__eu__container p {
+    width: 100%;
+}
+
+.itens__container {
+    display: flex;
+    justify-content: center;
+}
+
+}
